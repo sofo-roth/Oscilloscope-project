@@ -1,0 +1,40 @@
+Έναρξη
+Εισαγωγή της Βιβλιοθήκης Matplotlib
+Ορισμός Συνάρτησης calculate_blood_pressure
+Είσοδος: signal (Σήμα Πίεσης)
+Έξοδος: systolic_pressure, diastolic_pressure, mesi_piesi
+Διαδικασία:
+  Υπολογισμός systolic_pressure (μέγιστο του signal)
+  Υπολογισμός diastolic_pressure (ελάχιστο του signal)
+  Υπολογισμός mesi_piesi (μέσο του signal)
+  Επιστροφή systolic_pressure, diastolic_pressure, mesi_piesi
+Ορισμός Συνάρτησης create_talantografima
+Είσοδος: signal (Σήμα Πίεσης), mean_pressure
+Διαδικασία:
+  Σχεδίαση του signal στον άξονα X (Χρόνος) και Y (Πίεση)
+  Σχεδίαση διακεκομμένης κόκκινης γραμμής στο mean_pressure με ετικέτα MAP
+  Προσθήκη τίτλου και ετικετών στο γράφημα
+  Εμφάνιση του γραφήματος
+Δημιουργία Σήματος Πίεσης
+Λίστα τιμών πίεσης στο χρόνο
+Κλήση της συνάρτησης calculate_blood_pressure
+Είσοδος: pressure_signal
+Έξοδος: systolic, diastolic, mesi_piesi
+Εμφάνιση Αποτελεσμάτων Αρτηριακής Πίεσης
+Εκτύπωση systolic, diastolic, mesi_piesi
+Κενή γραμμή για διαχωρισμό
+Κατηγοριοποίηση Αρτηριακής Πίεσης
+Έλεγχος συνθηκών:
+  Αν systolic < 90 ή diastolic < 60:
+    Εμφάνιση "Χαμηλή Αρτηριακή Πίεση"
+  Διαφορετικά, αν systolic <= 120 και diastolic <= 80:
+    Εμφάνιση "Φυσιολογική Αρτηριακή Πίεση"
+  Διαφορετικά, αν 120 < systolic < 129 και diastolic < 80:
+    Εμφάνιση "Αυξημένη Αρτηριακή Πίεση"
+  Διαφορετικά, αν systolic >= 130 ή diastolic > 80:
+    Εμφάνιση "Υψηλή Αρτηριακή Πίεση"
+  Διαφορετικά, αν systolic >= 130 ή diastolic > 80:
+    Εμφάνιση "Μεμονωμένη Συστολική Υπέρταση"
+Κλήση της συνάρτησης create_talantografima
+Είσοδος: pressure_signal, mesi_piesi
+Τέλος
